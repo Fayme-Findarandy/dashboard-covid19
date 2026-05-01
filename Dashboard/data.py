@@ -113,8 +113,7 @@ def select_year():
     )
     return None if selected == "Semua Tahun" else selected
 
-def show_data():
-    df = load_data()
+def show_data(df):
     st.subheader("Tabel Data")
     st.dataframe(df)
 
